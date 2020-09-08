@@ -1,7 +1,16 @@
-var randTemp = (Math.random() * 12) + 18; // generating random number between 18 and 30
-console.log("The room temprature is " + Math.round(randTemp));
-var acStatus = false;
-if (randTemp <= 25) {
+function generateTemp() {
+    var randTemp = (Math.random() * 12) + 18; // generating random number between 18 and 30
+    return randTemp;
+}
+
+var listOfTemp = []
+for (var i = 0; i < 20; i++) {
+    var temp = generateTemp();
+    listOfTemp.push(temp);
+}
+var maxTemp = Math.max(...listOfTemp);
+
+if (maxTemp <= 25) {
     acStatus = true; // false means the AC is off, true means on
     console.log("It is getting too cold... AC Switched off");
 }
@@ -23,7 +32,7 @@ else {
 
 // exercise 2 
 var sensorValues = {
-    "temperature": Math.round(randTemp),
+    "temperature": Math.round(maxTemp),
     "lightsOn": lightStatus
 }
 
