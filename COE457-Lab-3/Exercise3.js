@@ -7,6 +7,7 @@ console.log("connected to the logger");
 // call backs to process events
 // -- when receiving data
 client.on('data', function(data) {
+try{
 //convert data to a JSON object
 acc = JSON.parse(data.toString());
 // console.log(acc);
@@ -22,8 +23,10 @@ if (accZ < 9.4)
     console.log('moving upwards');
 // else
 //     console.log('no z movement')
-} 
-);
+} catch(err){
+console.log(err.message);
+}
+});
 // -- when closing connection
 client.on('close', function() {
 console.log('Connection closed');
