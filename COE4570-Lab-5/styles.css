@@ -1,0 +1,77 @@
+.navbar {  
+    width: 100%;
+    background-color: #e0e0e0;
+  }
+  .navbar a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: inline-block;
+  }
+  
+  .navbar a:hover {
+      color: #FFFFFF;
+      background-color: #888888;
+  }
+  
+.sensorForm {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "Arial";
+}
+
+.headerSensors {
+    font-family: "Arial";
+    color: maroon;
+}
+
+.bodySensors {
+    font-family: "Arial";
+    font-size: 14px;
+}
+
+form input[type="submit"] {
+    background-color: lightgreen;
+    width: 100%;
+}
+
+.sensorForm label {
+    margin-left: 5px;
+} 
+
+form {
+    margin: 5px;
+    background-color: #e0e0e0;
+    border-radius: 5px;    
+}
+
+.formHeader {
+    font-family: "Arial";
+    font-size: 14;
+    color: maroon;    
+}
+
+.sameLineList {
+    display:inline-block;
+}
+
+.smallImage  {
+    height: 100px;
+    width: 100px;
+    border-radius: 10%;
+}
+
+input[type="text"]::placeholder {
+    text-align: center;
+}
+
+.Footer {
+    display: block;
+    justify-content: right;
+}
+.Footer footer {
+    display: flex;
+    justify-content: right;
+}

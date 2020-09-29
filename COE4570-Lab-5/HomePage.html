@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <a href="http://auscse.com/" > <img src="http://auscse.com/main/images/banner.png" alt="CSE Logo" width="300"> </a> 
+        <div class="navbar">
+            <a href="HomePage.html">Home</a>
+            <a href="Sensors.html">Sensors</a>
+        </div>  
+        <p> You can set up the lights, AC and temperature of the room by filling the form below. </p>
+        <div class="sensorForm">
+            <form method="POST">
+                <h2 class="formHeader"> <b> COE457 Smart Lab Set Up</b> </h2>
+                <br>
+                <label>  <b> Lab Lights:  </b></label>
+                <input type="radio" name="lights">On 
+                <input type="radio" name="lights">Off
+                <br>
+                <br>
+                <label>  <b> AC Mode: </b></label>
+                <input type="radio" name="AC">On 
+                <input type="radio" name="AC">Off
+                <br>
+                <br>
+                <label> <b> Temperature Threshold: </b> </label>
+                <input type="text" placeholder="in degrees celsius" name="Temperature">
+                <br><br>
+                <input type="submit" value="Save">
+            </form>
+        </div>
+        <div class="Footer"> 
+            <footer>
+                <p> <b> © Ramy Gendy and Saif AlNajjar <b> </p>
+            </footer>
+        </div>
+    </body>
+</html>
