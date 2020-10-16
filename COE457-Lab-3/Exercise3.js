@@ -1,7 +1,7 @@
 var net = require('net');
 var client = new net.Socket();
 // add your phone's IP and port
-client.connect(4242, '10.0.1.52', function() {
+client.connect(4242, '10.0.1.42', function() {
 console.log("connected to the logger");
 });
 // call backs to process events
