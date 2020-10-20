@@ -1,0 +1,206 @@
+html {
+    font-family: Nunito;
+    font-size: 15;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.logoContainer {
+    display: flex;
+}
+.mainContainer {
+    height: 80%;
+    width: 80%;
+    padding: 5%;
+    padding-top: 2%;
+    display: flex;
+}
+
+.imageContainer {
+    width: 80%;
+    height: 100%;
+    /* background-image: url("https://cdn.shopify.com/s/files/1/1897/8919/t/81/assets/Beeline_June19_0137.jpg?v=8578318809900844477");
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+.imageContainer img {
+    object-fit: cover;
+    height: 95%;
+    width: 100%;
+} 
+
+.infoContainer {
+    height: 100%;
+    padding: 0 0 0 5%;
+}
+
+.infoContainer h2 {
+    font-size: 36;
+}
+
+.infoContainer h4 {
+    font-weight: 300;
+}
+
+.phonesContainer {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50%;
+}
+
+.phonesContainer div img {
+    padding: 0% 3%;
+    height: 100%;
+    width: auto;
+    padding-bottom: 2%;
+}
+
+.featureContainer ul {
+    list-style-image: url("https://cdn.shopify.com/s/files/1/1897/8919/t/81/assets/list-tick.svg?v=16203427679333973700");
+}
+
+.featureContainer ul li{
+    padding-bottom: 2%;
+}
+
+.downloadContainer {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50%;
+}
+
+.downloadContainer div img {
+    padding: 0% 3%;
+    height: 20%;
+    width: auto;
+
+}
+
+.textContainer {
+    height: 90%;
+    position: relative;
+    bottom: 5%;
+    padding-left: 1%;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .mainContainer {
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding: 0%;
+        padding-top: 5%;
+    }
+    
+    .textOnMobile h2 {
+        font-size: 45px;
+    }
+
+    .imageContainer {
+        position: relative;
+        right: 3%;
+        width: 100%;
+        padding-bottom: 5%;
+    }
+
+    .imageContainer img {
+        width: 110%;
+        height: 100%;
+        overflow: hidden;
+    } 
+    
+    .textContainer {
+        width: 100%;
+    }
+
+    .phonesContainer {
+        display: flex;
+        height: 40%;
+    }
+    
+    .phonesContainer div img {
+        height: 80%;
+        width: 80%;
+        padding-bottom: 2%;
+    }
+    
+    .downloadContainer {
+        display: flex;
+        justify-content: space-evenly;
+        height: 50%;
+    }
+    
+    .downloadContainer div img {
+        height: 20%;
+        width: 90%;
+    }
+    #logoImage {
+        height: 15%;
+        width: auto;
+    }
+}
+
+
+@media screen and (max-width: 1200px) and (min-width: 650px) {
+    .mainContainer {
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding: 0%;
+        padding-top: 1%;
+    }
+    
+    .textOnMobile h2 {
+        font-size: 45px;
+    }
+
+    .imageContainer {
+        width: 77%;
+        height: 70%;
+        padding-bottom: 3%;
+    }
+
+    .imageContainer img {
+        width: 110%;
+        height: 100%;
+        overflow: hidden;
+    } 
+    
+    .textContainer {
+        width: 100%;
+    }
+
+    .phonesContainer {
+        display: flex;
+        height: 40%;
+    }
+    
+    .phonesContainer div img {
+        height: 80%;
+        width: 80%;
+        padding-bottom: 2%;
+    }
+    
+    .downloadContainer {
+        display: flex;
+        justify-content: space-evenly;
+        height: 50%;
+    }
+    
+    .downloadContainer div img {
+        height: 20%;
+        width: 90%;
+    }
+
+    .textContainer {
+        width: 40%;
+    }
+
+}
