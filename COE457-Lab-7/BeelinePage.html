@@ -1,10 +1,6 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="./styles.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -16,7 +12,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
     integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
     crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link
+  href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+  rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Motorcycle sat nav | Beeline</title>
 </head>
@@ -63,7 +63,7 @@
             <a class="dropdown-item" href="#" id="txt">USD $</a>
           </div>
         </li>
-        <li class="nav-item border rounded">
+        <li class="nav-item">
           <button type="button" class="btn btn-outline-success d-flex">
             <svg width="2em" viewBox="0 0 16 16" class="bi bi-basket" fill="currentColor"
               xmlns="http://www.w3.org/2000/svg">
@@ -73,16 +73,15 @@
             <a class="nav-link" style="color: #28a745" href="#">Basket</a>
           </button>
         </li>
-        <div>
-          <form class="form-inline my-2 my-lg-0">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick=increase_font()>Increase Font Size</button>
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick=change_font()>Change Font Type</button>
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick=reset_font()>Reset Font Size</button>
-          </form>
+        <div class="nav-item ">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="increase_font();"><a href="#" class="nav-link" style="color:#28a745;">Increase Font Size</a></button>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick=change_font()><a href="#" class="nav-link" style="color:#28a745;">Change Font Type</a></button>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick=reset_font()><a href="#" class="nav-link" style="color:#28a745;">Reset Font Size</a></button>
         </div>
       </ul>
     </div>
   </nav>
+  <br />
   <br />
   <div class="text-center">
     <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsedForm"
@@ -91,8 +90,8 @@
     </button>
     <br />
     <br />
-    <div class="text-center justify-content-center">
-      <form class="form-check rounded border border-primary" id="collapsedForm">
+    <div class="text-center justify-content-center collapse" id="collapsedForm">
+      <form class="form-check rounded border border-primary" >
         <div class="form-group">
           <label> Name: </label>
           <input type="text" class="form-control border-secondary" />
@@ -108,45 +107,7 @@
       </form>
     </div>
   </div>
-  <!-- <div>
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
-            </div>
-          </nav>
 
-         <div class="logoContainer"> 
-            <a href="https://beeline.co/"><img src="https://cdn.shopify.com/s/files/1/1897/8919/files/logo-beeline_1.svg?v=1590683803" alt=""></a> -->
   <!-- image links:
             Motorcycle: https://cdn.shopify.com/s/files/1/1897/8919/t/81/assets/Beeline_June19_0137.jpg?v=8578318809900844477
             phones: https://cdn.shopify.com/s/files/1/1897/8919/files/bl_app_navigate-squashed.png?v=1588332699
@@ -154,11 +115,11 @@
                 https://cdn.shopify.com/s/files/1/1897/8919/files/bl_app_routesummary-squashed.png?v=1588332698 
             download: android: https://cdn.shopify.com/s/files/1/1897/8919/files/google-play-badge.png?6098
                       apple: https://cdn.shopify.com/s/files/1/1897/8919/files/Download_on_the_App_Store_Badge_US-UK_135x40_0f84ea02-7f84-4f16-9e87-9295f0dd004a.png?6098
-
                       https://cdn.shopify.com/s/files/1/1897/8919/t/81/assets/list-tick.svg?v=16203427679333973700
                     -->
   <div class="mainContainer">
-    <div class="imageContainer">
+    <a href="#"></a>
+    <div class="imageContainer" onclick=reduce_image_size()>
       <img src="https://cdn.shopify.com/s/files/1/1897/8919/t/81/assets/Beeline_June19_0137.jpg?v=8578318809900844477"
         alt="" />
     </div>
@@ -169,7 +130,7 @@
           Plan routes and see your journey history with the Beeline app,
           avaliable for iOS and Android
         </h4>
-        <div class="phonesContainer">
+        <div class="phonesContainer" onclick=poof()>
           <div>
             <img src="https://cdn.shopify.com/s/files/1/1897/8919/files/bl_app_navigate-squashed.png?v=1588332699"
               alt="" />
@@ -213,8 +174,7 @@
     </div>
   </div>
 
-  <script src="code.js">
-  </script>
+  <script src="code.js"></script>
 </body>
 
 </html>

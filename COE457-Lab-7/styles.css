@@ -1,11 +1,12 @@
 html {
-    font-family: Nunito;
-    font-size: 15;
+    font-family: Nunito !important;
     height: 100%;
     width: 100%;
+    font-size: 15;
 }
 
 body {
+    font-family: inherit;
     height: 100%;
     width: 100%;
 }
@@ -24,14 +25,12 @@ body {
 .imageContainer {
     width: 80%;
     height: 100%;
-    /* background-image: url("https://cdn.shopify.com/s/files/1/1897/8919/t/81/assets/Beeline_June19_0137.jpg?v=8578318809900844477");
-    background-repeat: no-repeat;
-    background-size: cover; */
 }
 .imageContainer img {
     object-fit: cover;
     height: 95%;
     width: 100%;
+    cursor: pointer;
 } 
 
 .infoContainer {
@@ -40,7 +39,7 @@ body {
 }
 
 .infoContainer h2 {
-    font-size: 36;
+    font-size: 2.5em;
 }
 
 .infoContainer h4 {
@@ -58,6 +57,7 @@ body {
     height: 100%;
     width: auto;
     padding-bottom: 2%;
+    cursor: pointer;
 }
 
 .featureContainer ul {
@@ -100,7 +100,7 @@ body {
     }
     
     .textOnMobile h2 {
-        font-size: 45px;
+        font-size: 3em;
     }
 
     .imageContainer {
@@ -158,7 +158,7 @@ body {
     }
     
     .textOnMobile h2 {
-        font-size: 45px;
+        font-size: 3em;
     }
 
     .imageContainer {
